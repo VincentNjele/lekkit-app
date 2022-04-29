@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { AddProperty } from './components/AddProperty';
+import { ComponentsHolder } from './ComponentsHolder';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { DetailsPage } from './components/DetailsPage';
+import { UpdateRecord } from './components/UpdateRecord';
+import { UploadImage } from './components/UploadImage';
+
+const App = () => {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div  className='content-wrapper'>
+    <Router>    
+        <Routes>     
+            <Route path='/' element={<ComponentsHolder />} />
+            <Route path='/AddProperty' element = {<AddProperty />}/>
+            <Route path='/DetailsPage/:id' element = {<DetailsPage/>}/>
+            <Route path='/UpdateRecord/:id' element = {<UpdateRecord/>}/>
+            <Route path='/UpdloadImage' element = {<UploadImage />}/>
+
+        </Routes>
+    </Router>
+
     </div>
+
+   
   );
 }
 

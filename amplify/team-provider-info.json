@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lekkitproject-dev-195938-authRole",
+      "UnauthRoleArn": "arn:aws:iam::141046944700:role/amplify-lekkitproject-dev-195938-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::141046944700:role/amplify-lekkitproject-dev-195938-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-lekkitproject-dev-195938-deployment",
+      "UnauthRoleName": "amplify-lekkitproject-dev-195938-unauthRole",
+      "StackName": "amplify-lekkitproject-dev-195938",
+      "StackId": "arn:aws:cloudformation:us-west-2:141046944700:stack/amplify-lekkitproject-dev-195938/d617c530-c653-11ec-ab23-0617073de53f",
+      "AmplifyAppId": "d1fo8bvf4pza6c"
+    }
+  }
+}
